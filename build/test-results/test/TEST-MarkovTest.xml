@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MarkovTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-07-23T05:31:20" hostname="Rasnas-MacBook-Pro.local" time="0.086">
+  <properties/>
+  <testcase name="endsWithPunctuation()" classname="MarkovTest" time="0.046"/>
+  <testcase name="getSentence()" classname="MarkovTest" time="0.008"/>
+  <testcase name="addWordTest()" classname="MarkovTest" time="0.003"/>
+  <testcase name="addBadLineTest()" classname="MarkovTest" time="0.003"/>
+  <testcase name="constructor_test()" classname="MarkovTest" time="0.003"/>
+  <testcase name="randomWord()" classname="MarkovTest" time="0.002"/>
+  <testcase name="toStringTest()" classname="MarkovTest" time="0.003"/>
+  <testcase name="addLongLineTest()" classname="MarkovTest" time="0.002"/>
+  <testcase name="getWords()" classname="MarkovTest" time="0.002"/>
+  <testcase name="addFromFile()" classname="MarkovTest" time="0.002"/>
+  <system-out><![CDATA[Making the file...
+endsWithPunctuation test
+	testing: there
+	testing: there.
+	testing: there!
+	testing: there?
+Trying   	
+ Hello   
+ 	  there. 
+	
+ 
+Hello there.
+{Hello=[there.], __$=[Hello]}
+Trying: Now is the winter of our discontent; made glorious summer by these sons Of York.
+Now is the winter of our discontent; made glorious summer by these sons Of York.
+Testing getWords
+	Size check: Expected == 2
+	correct structure: {Hello=[there.], __$=[Hello]}
+{__$=[]}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
